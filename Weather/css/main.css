@@ -1,0 +1,123 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Inter:300,regular,500,700);
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 51px;
+    width: 100%;
+    height: 200px;
+    background: black;
+}
+
+.title {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 21px;
+
+    color: #FFFFFF;
+
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 409px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+
+
+    color: #000000;
+}
+
+.btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+
+    color: #FFFFFF;
+
+    width: 141px;
+    height: 60px;
+
+    background: #FE0808;
+    border-radius: 10px;
+
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+    width: 599px;
+    background-color: #000000;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
+    color: #fff;
+
+}
+
+.card-city {
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.card-city span {
+    display: inline-block;
+    padding: 3px 5px;
+    background: #e5464f;
+
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.card-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-value {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.card-description {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+
+
