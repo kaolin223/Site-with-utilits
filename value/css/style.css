@@ -16,6 +16,8 @@
     margin-left: 5px;
 }
 
+.course-item {
+}
 .course-item-title {
     font-weight: 700;
     font-size: 18px;
@@ -32,20 +34,3 @@
 .course-item-value.bottom {
     color: rgb(19, 189, 61);
 }
-
-.container { 
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */ 
-
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-

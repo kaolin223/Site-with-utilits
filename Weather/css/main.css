@@ -13,8 +13,6 @@ body {
     row-gap: 50px;
 }
 
-
-
 .header {
     display: flex;
     flex-direction: column;
@@ -32,6 +30,7 @@ body {
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
+
 }
 
 .title {
@@ -40,9 +39,8 @@ body {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 21px;
-
     color: #FFFFFF;
-
+    user-select: none;
 }
 
 .form {
