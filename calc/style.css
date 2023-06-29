@@ -1,0 +1,138 @@
+/* Задний план (Миша, я че знаю как написать?) */
+hr{
+    color: black;
+    height: 2px;
+}
+
+a{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    margin-left: 200px;
+}
+li{
+    display: inline;
+}
+a:hover{
+    color: rgb(133, 132, 132);
+}
+
+.header {
+    background: rgba(22, 15, 161, 0.151);
+    background: linear-gradient(90deg, rgba(23,15,161,1) 0%, rgba(108, 140, 130, 0.253) 35%, rgba(0, 213, 255, 0.274) 100%);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("image/calcimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    color: rgb(255, 87, 51);
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 20px;
+    top: 0;
+    left: 0;
+
+}
+
+.back{
+    background: gray;
+}
+
+
+/*Стиль калькулятора */
+
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac ac ac division"
+    "seven eigth nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn.ac {
+    grid-area: ac;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background: #a6a6a6;
+}
+
+.btn.bg-orange {
+    background: #ff9501;
+}

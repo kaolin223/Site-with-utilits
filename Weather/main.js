@@ -32,7 +32,7 @@ const showCard = ({ name, country, temp, condition }) => {
 
 </div>`;
 
-    header.insertAdjacentHTML('afterend', html)
+header.insertAdjacentHTML('afterend', html)
 }
 
 async function getWeather(city) {
@@ -41,31 +41,31 @@ async function getWeather(city) {
     const data = await response.json();
     console.log(data)
     return data;
-
+    
 }
 
 
 form.onsubmit = async function (e) {
     e.preventDefault();
-
+    
     let city = input.value.trim();
 
     const data = await getWeather(city);
 
-
-    if (data.error) {
+    
+    if(data.error) {
         removeCard();
         showError(data.error.message)
     } else {
         removeCard();
 
         const weatherData = {
-            name: data.location.name,
-            country: data.location.country,
-            temp: data.current.temp_c,
-            condition: data.current.condition.text,
-        };
+			name: data.location.name,
+			country: data.location.country,
+			temp: data.current.temp_c,
+			condition: data.current.condition.text,
+		};
 
-        showCard(weatherData);
+		showCard(weatherData);
+	}
     }
-}
